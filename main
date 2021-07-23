@@ -1,0 +1,71 @@
+from random import randint
+
+rock ='''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper ='''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+''' 
+
+scissors ='''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+''' 
+player1=input( " What do you choose? Type 0 for Rock,1 for Paper, 2 for Scissors.")
+player2= randint(0, 2)
+if player2==0:
+    player2=rock
+elif player2==1:
+    player2=paper
+elif player2==2:
+    player2=scissors
+
+if player1=="0":
+    player1=rock
+elif player1=="1":
+    player1=paper
+elif player1=="2":
+    player1=scissors
+
+
+if player1==player2:
+  
+    
+    print(player2)
+    print(player1)
+    print("It's a draw.")
+elif player1==rock and player2==paper:
+    print("Computer wins.")
+    print(player2)
+    print(player1)
+    print("Computer wins.")
+elif player1==paper and player2==rock:
+    
+    print(player2)
+    print(player1)
+    print("You won.")
+elif player1==paper and player2==scissors:
+    
+    print(player2)
+    print(player1)
+    print("Computer wins.")
+elif player1==scissors and player2==paper:
+          
+    print(player2)
+    print(player1)
+    print("You won.")
