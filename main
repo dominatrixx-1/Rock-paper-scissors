@@ -50,7 +50,7 @@ if player1==player2:
     print(player1)
     print("It's a draw.")
 elif player1==rock and player2==paper:
-    print("Computer wins.")
+   
     print(player2)
     print(player1)
     print("Computer wins.")
@@ -69,3 +69,11 @@ elif player1==scissors and player2==paper:
     print(player2)
     print(player1)
     print("You won.")
+elif player1==rock and player2==scissors:
+    print(player2)
+    print(player1)
+    print("You won.")
+elif player1==scissors and player2==rock:
+    print(player2)
+    print(player1)
+    print("Computer wins.") 
